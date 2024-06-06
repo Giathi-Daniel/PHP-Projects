@@ -1,5 +1,7 @@
 # Multipurpose Calculator Application
 
+[image-calculator]("design.png")
+
 ## Table of Contents
 
 1. [Introduction](#introduction)

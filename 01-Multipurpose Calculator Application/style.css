@@ -5,7 +5,10 @@ body {
     align-items: center;
     block-size: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: url("bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* #f0f0f0 */
 }
 
 .calculator {
