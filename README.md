@@ -1,1 +1,1 @@
-This repo contains PHP projects
+This repo contains PHP learning projects
