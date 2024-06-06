@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add two numbers</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <input type="text" name="number1" id="num1" placeholder="Enter number 1">
+        <input type="text" name="number2" id="num2" placeholder="Enter number 2">
+        <input type="submit" value="Add numbers" id="add-btn">
+    </form>
+
+    <!-- <script>
+        document.getElementById('add-btn').addEventListener('click', () => {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let result = num1 + num2;
+                document.getElementById('result').innerHTML = 'Result: ' + result;
+            } else {
+                document.getElementById('result').innerHTML = 'Please enter valid numbers';
+            }
+        });
+    </script> -->
+
+</body>
+</html>

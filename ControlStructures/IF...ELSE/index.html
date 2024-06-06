@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If..Else</title>
+</head>
+<body>
+    <form method="post">
+        Enter Age: 
+        <input type="number" name="age">
+        <input type="submit" value="TEST" name="submit">
+    </form>
+
+    <?php
+        if(isset($_POST['submit'])) {
+            $age = $_POST['age'];
+            if($age < 30) {
+                echo "<script language='javascript'>alert('$age must be between 30')</script>"
+            } else {
+                echo "<script type="text/javascript">alert('$age - is greater than 30')</script>"
+            }
+        }
+    ?>
+</body>
+</html>
