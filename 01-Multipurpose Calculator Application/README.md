@@ -1,6 +1,6 @@
 # Multipurpose Calculator Application
 
-[image-calculator]("design.png")
+![image-calculator](design.png)
 
 ## Table of Contents
 
