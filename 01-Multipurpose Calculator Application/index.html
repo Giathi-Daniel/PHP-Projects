@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator Application</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="calculator">
-        <h2>Multipurpose Calculator</h2>
-        <form action="index.php" method="POST">
-            <input type="number" name="num1" placeholder="Enter num1">
-            <input type="number" name="num2" placeholder="Enter num2">
-            <select name="operation">
-                <option value="add">Addition (+)</option>
-                <option value="subtract">Subtraction (-)</option>
-                <option value="multiply">Multiplication (*)</option>
-                <option value="divide">Division (/)</option>
-                <option value="modulus">modulus (%)</option>
-                <option value="percentage">Percentage</option>
-                <option value="sqrt">Square Root (first number)</option>
-                <option value="log">Logarithm (base 10 of first number)</option>
-            </select>
-            <button type="submit">Calculate</button>
-        </form>
+      <h2>Multipurpose Calculator</h2>
+      <form action="index.php" method="POST">
+        <input type="number" name="num1" placeholder="Enter num1" />
+        <input type="number" name="num2" placeholder="Enter num2" />
+        <select name="operation">
+          <option value="add">Addition (+)</option>
+          <option value="subtract">Subtraction (-)</option>
+          <option value="multiply">Multiplication (*)</option>
+          <option value="divide">Division (/)</option>
+          <option value="modulus">modulus (%)</option>
+          <option value="percentage">Percentage</option>
+          <option value="sqrt">Square Root (first number)</option>
+          <option value="log">Logarithm (base 10 of first number)</option>
+        </select>
+        <button type="submit">Calculate</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
