@@ -15,7 +15,7 @@ const formValidation = () => {
 
     let isValid = true;
 
-    if (!name || name === '123456790') {
+    if (!name) {
         showError('nameError', 'Name is required');
         isValid = false;
     }
@@ -44,9 +44,39 @@ const formValidation = () => {
     return isValid;
 };
 
-document.getElementById('submit').addEventListener('click', (e) => {
+document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    
     if (!formValidation()) {
-        e.preventDefault(); // prevents form submission if validation fails
+        return;
     }
-    // console.log('Form validation failed')
+
+    const formData = new FormData(this);
+
+    fetch('submit_feedback.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Display success popup
+            document.getElementById('popup').style.display = 'block';
+            // Redirect to view_feedback.php after 2 seconds or on button click
+            document.getElementById('viewFeedbackBtn').addEventListener('click', () => {
+                window.location.href = 'view_feedback.php';
+            });
+            setTimeout(() => {
+                document.getElementById('popup').style.display = 'none';
+                window.location.href = 'view_feedback.php';
+            }, 2000);
+        } else {
+            // Display error message if submission fails
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the feedback. Please try again.');
+    });
 });
