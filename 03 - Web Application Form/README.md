@@ -72,3 +72,4 @@ _Evaluation Criteria_
 • Cross-Browser Compatibility: Ensure the application works smoothly across different web browsers.
 
 ![formInput](images/d1.png)
+![formInput](images/d2.png)
